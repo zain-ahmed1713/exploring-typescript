@@ -21,6 +21,12 @@ var sayHello = function (name) {
 var throwError = function (errMsg) {
     throw new Error(errMsg);
 };
+// Object Type
+// Used when a function returns an object
+var returnObj = function (name, email) {
+    return { name: name, email: email };
+};
+var runFunction = returnObj("Zain", "zain@zain.com");
 // Array map method
 var languages = ["JS", "CPP", "Python"];
 languages.map(function (val, index) {

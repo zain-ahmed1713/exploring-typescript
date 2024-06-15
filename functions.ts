@@ -28,6 +28,14 @@ const throwError = (errMsg: string): never => {
     throw new Error(errMsg)
 }
 
+// Object Type
+// Used when a function returns an object
+const returnObj = (name: string, email: string): {} => {
+    return { name: name, email: email }
+}
+
+const runFunction = returnObj("Zain", "zain@zain.com")
+
 // Array map method
 const languages = ["JS", "CPP", "Python"]
 languages.map((val, index): string => {
